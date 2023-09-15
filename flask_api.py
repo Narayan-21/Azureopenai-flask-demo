@@ -131,3 +131,5 @@ info4.pdf: In-network institutions include Overlake, Swedish and others in the r
             return jsonify({"error": "No valid PDF files were provided"}), 400
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+if __name__ == "__main__":
+  app.run(debug=True)
